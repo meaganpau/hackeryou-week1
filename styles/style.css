@@ -183,7 +183,7 @@ section {
 
 .contact {
 	text-align: center;
-
+	clear: both;
 }
 
 .contact .contact-icons a {
@@ -270,4 +270,39 @@ footer a {
 
 .skills li p {
 	padding: 20px 0;
+}
+
+.projects h3 {
+	text-transform: uppercase;
+}
+
+.project {
+	width: 50%;
+	/*	border: 1px solid black;*/
+	display: inline-block;
+}
+
+.project-text {
+	float: right;
+	height: 300px;
+}
+
+#project1 {
+	background: #aaa;
+	float: left;
+}
+
+#project2 {
+	background: #bbb;
+	float: right;
+}
+
+#project3 {
+	background: #ddd;
+	float: left;
+}
+
+.project img {
+	height: 300px;
+	float: left;
 }
