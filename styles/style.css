@@ -11,6 +11,7 @@ header {
 
 body {
 	margin: 0;
+	overflow-x: hidden;
 }
 
 .container {
@@ -100,7 +101,6 @@ nav a:active {
 	background-position: center;
 	width: 100%;
 	position: relative;
-	margin-bottom: 100px;
 }
 
 .hello {
@@ -178,20 +178,15 @@ main p {
 }
 
 section {
-	margin-bottom: 100px;
+	padding: 100px 0;
 }
 
 .contact {
 	text-align: center;
-	clear: both;
 }
 
 .contact .contact-icons a {
 	color: #000;
-}
-
-.contact .contact-icons {
-	margin: 50px 0;
 }
 
 .contact .contact-icons a:hover {
@@ -212,14 +207,6 @@ section {
 footer {
 	background: #000;
 	height: 150px;
-}
-
-footer a {
-	color: #fff;
-}
-
-.projects p {
-	font-style: italic;
 }
 
 .footer-text {
@@ -258,8 +245,8 @@ footer a {
 :target:before {
   content:"";
   display:block;
-  height: 80px; /* fixed header height*/
-  margin: -80px 0 0; /* negative fixed header height */
+  height: 80px;
+  margin-top: -80px;
 }
 
 .skills li {
@@ -276,33 +263,83 @@ footer a {
 	text-transform: uppercase;
 }
 
-.project {
-	width: 50%;
+.projects {
+	background: #eee;
+}
+
+/*.project {*/
 	/*	border: 1px solid black;*/
-	display: inline-block;
+	/*display: inline-block;*/
+	/*box-shadow: 0px 0px 47px -12px rgba(0,0,0,0.5);*/
 }
 
-.project-text {
-	float: right;
+/*.project-text {
 	height: 300px;
+	width: 50%;
 }
-
-#project1 {
-	background: #aaa;
-	float: left;
-}
-
-#project2 {
-	background: #bbb;
+*/
+#project-text1, #project-text3 {
 	float: right;
 }
 
-#project3 {
-	background: #ddd;
+#project1 img{
+	/*background: #aaa;*/
 	float: left;
+}
+
+#project2 img {
+	/*background: #bbb;*/
+	float: right;
+	margin-top: -25%;
+}
+
+#project3 img {
+	/*background: #ddd;*/
+	float: left;
+	margin-top: -20%;
+	margin-left: 10%;
 }
 
 .project img {
-	height: 300px;
-	float: left;
+	width: 60%;
+	min-width: 400px;
+	-webkit-filter: saturate(0);
+  	filter: saturate(0);
 }
+
+.project img:hover {
+	-webkit-filter: saturate(100%);
+  	filter: saturate(100%);
+  	transition: 1s;
+}
+
+.github {
+	float: left;
+	text-align: center;
+	margin: 8% 0 0 5%;
+}
+
+.github p {
+	font-size: 18px;
+}
+
+#github span {
+	font-size: 80px;
+	color: #000;
+}
+
+#github span:hover {
+	color: #bbb;
+	transition: 0.5s;
+}
+
+#github span:active {
+	color: #eee;
+	transition: 0.25s;
+}
+
+
+
+
+
+
