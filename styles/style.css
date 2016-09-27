@@ -13,6 +13,8 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	max-width: 1680px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .container {
@@ -73,11 +75,11 @@ nav a {
 
 a {
 	color: #000;
+	transition: 0.5s;
 }
 
 a:hover {
 	color: #bbb;
-	transition: 0.5s;
 }
 
 a:active {
@@ -160,6 +162,8 @@ a:active {
 
 .hello h1:last-child {
 	text-align: right;
+	position: relative;
+	top: -10px;
 }
 
 .hello {
@@ -171,7 +175,7 @@ a:active {
 .hello-text {
 	width: 100%;
 	position: absolute;
-	top: 40px;
+	top: 39px;
 	right: 50px;
 }
 
@@ -179,7 +183,7 @@ a:active {
 	font-size: 80px;
 	font-family: 'Crimson Text', serif;
 	position: relative;
-	top: 8px;
+	top: 15px;
 }
 
 .hello-shape-small {
@@ -211,6 +215,10 @@ h1 {
 	h1 {
 		font-size: 20px;
 		line-height: 20px;
+	}
+
+	.hello h1:last-child {
+			position: static;
 	}
 
 	.hello-text span {
@@ -259,7 +267,7 @@ main p {
 	font-size: 22px;
 	font-weight: 100;
 	letter-spacing: 1.5px;
-	line-height: 40px;
+	line-height: 33px;
 }
 
 section {
@@ -272,11 +280,11 @@ section {
 
 .contact .contact-icons a {
 	color: #000;
+	transition: 0.5s;
 }
 
 .contact .contact-icons a:hover {
 	color: #bbb;
-	transition: 0.5s;
 }
 
 .contact .contact-icons a:active {
@@ -312,10 +320,12 @@ footer {
 	background: #FAFAFA;
 	padding-top: 100px;
 	padding-bottom: 50px;
+	clear: both;
 }
 
 .skills .devicons {
 	font-size: 80px;
+	transition: 0.5s;
 }
 
 .skills p {
@@ -326,7 +336,6 @@ footer {
 
 .skills .devicons:hover {
 	color: #bbb;
-	transition: 0.5s;
 }
 
 :target:before {
@@ -344,7 +353,7 @@ footer {
 }
 
 .skills li p {
-	margin: 20px 0;
+	margin: 12px 0;
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -383,12 +392,12 @@ footer {
 	min-width: 400px;
 	-webkit-filter: saturate(0);
   	filter: saturate(0);
+  	transition: 1s;
 }
 
 .project img:hover {
 	-webkit-filter: saturate(100%);
   	filter: saturate(100%);
-  	transition: 1s;
 }
 
 .github {
@@ -405,11 +414,11 @@ footer {
 
 @media (max-width: 900px) {
 	.github p {
-		font-size: 12px;
+		font-size: 15px;
 		line-height: 22px;	}
 
 	.github {
-		width: 120px;
+		width: 150px;
 
 	}
 }
@@ -417,11 +426,11 @@ footer {
 #github span {
 	font-size: 80px;
 	color: #000;
+	transition: 0.5s;
 }
 
 #github span:hover {
 	color: #bbb;
-	transition: 0.5s;
 }
 
 #github span:active {
@@ -447,7 +456,7 @@ footer {
 	}
 	
 	.github p {
-		font-size: 18px;
+		font-size: 15px;
 	}
 
 	#github span {
@@ -455,38 +464,66 @@ footer {
 	}
 }
 
-#hackerYou {
+#hackerYou, #email {
 	font-style: italic;
 	border-bottom: 1px solid #bbb;
 	padding-bottom: 5px
+}
+
+#hackerYou:hover {
+	color: #D12026;
+	border-bottom: 1px solid #D12026;
+}
+
+#hackerYou:active {
+	color: #bbb;
+	border-bottom: 1px solid #bbb;
+	transition: 0.25s;
+}
+
+#email {
+	transition: 0.5s;
+}
+
+#email:hover {
+	color: #bbb;
+	border-bottom: 1px solid #eee;
+}
+
+#email:active {
+	color: #000;
+	border-bottom: 1px solid #bbb;
+	transition: 0.25s;
 }
 
 ul {
 	padding: 0;
 }
 
-#dropDown {
+nav #dropDown {
     display: none;
     box-shadow: 0 1px 3px rgba(0,0,0,0.15);
     float: right;
     width: 200px;
 	background-color: #FFF;
-	opacity: 0.95;
+	position: relative;
+	top: 80px;
 }
 
 #dropDown a {
     display: block;
     padding: 20px;
+    color: #000;
 }
 
 #dropDown a:hover {
-    background: #000;
-    color: #FFF;
+    background: #eee;
+    color: #989898;
 }
 
 #dropDown a:active {
 	background: #ccc;
-
+	color: white;
 }
 
 .menu i {
@@ -494,4 +531,71 @@ ul {
 	line-height: 80px;
 	display: block;
 	float: right;
+}
+
+.about {
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+}
+
+@media (max-width: 1000px) {
+	.about {
+		width: 80%;
+	}
+}
+
+.about-text p {
+	text-align: right;
+}
+
+.about-text {
+	width: 70%;
+	display: inline-block;
+	float: left;
+}
+
+.about-pic {
+	display: inline-block;
+}
+
+#me-pic {
+	text-align: right;
+	width: 200px;
+	border: 1px solid #ccc;
+	-webkit-filter: brightness(105%) saturate(0);
+	filter: brightness(102%) saturate(0);
+	margin-left: 20px;
+  	transition: 0.5s;
+}
+
+#me-pic:hover {
+  	-webkit-filter: brightness(1) saturate(100%);
+  	filter: brightness(1) saturate(92%);
+  	border: 1px solid black;
+}
+
+@media (max-width: 900px) {
+	.about-pic {
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+	.about-text {
+		width: 100%;
+	}
+	.about-text	p {
+		text-align: center;
+		font-size: 20px;
+	}
+
+	#me-pic {
+		margin-bottom: 20px;
+		margin-left: 0px;
+	}
+	
+	main p {
+		line-height: 38px;
+	}
 }

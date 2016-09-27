@@ -13,6 +13,16 @@
 		<link rel="stylesheet" href="styles/devicons.min.css">
 		<link rel="stylesheet" href="styles/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto:100|Martel:200" rel="stylesheet">
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-84743291-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</head>
 	<body id="home">
 		<header>
@@ -56,21 +66,26 @@
 						    <polygon id="Path" stroke="none" fill="#000000" fill-rule="evenodd" points="819 586.767233 1211 562 1168.52035 683.344619 839.51189 662.625504"></polygon>
 						</svg>
 						<div class="hello-text">
-							<h1>Hi, my name is Meagan,</h1>
-							<h1><span>&</span> I'm a Web Developer.</h1>
+							<h1 id="hello-hi">Hi, my name is Meagan,</h1>
+							<h1 id="hello-and"><span>&</span> I'm a Web Developer.</h1>
 						</div>
 					</div>
 				</div>
 			</section>
 		</header>
 		<main>
-			<section class="about anchor" id="about">
-				<div class="container">
-					<h2>About</h2>
-					<hr>
-					<p>
-						Hello! My name is Meagan, and I'm a Front End Web Developer based in Toronto. I am currently a student at <a href="http://www.hackeryou.com/" target="_blank" id="hackerYou">HackerYou</a>. 
-					</p>
+			<section class="about anchor clearfix" id="about">
+				<h2>About</h2>
+				<hr>
+				<div class="about-pic">
+					<img id="me-pic" src="images/me-4.jpg" title="Photo by Pam Lau">
+				</div>
+
+				<div class="about-text">
+					<p>Hello! My name is Meagan, and I'm a Front End Web Developer based in Toronto. I am currently a student at <a href="http://www.hackeryou.com/" target="_blank" id="hackerYou">HackerYou</a>.</p>
+					<br><br>
+					<p>Want to work with me?<br>Feel free to <span id="email">e-mail me<a href="mailto:hello@meaganpau.com"></span>. <i class="fa fa-envelope" title="E-Mail"></i></a></span></p>
+		
 				</div>
 			</section>
 			<section class="skills anchor" id="skills">
@@ -133,13 +148,13 @@
 				<h2>Projects</h2>
 				<hr>
 				<div class="project" id="project1"> 
-					<img src="images/oak.png" alt="OAK" title="OAK">
+					<a href="oak/index.html" target="_blank"><img src="images/oak.png" alt="OAK" title="OAK"></a>
 				</div>
 				<div class="project" id="project2">
-					<img src="images/elrumi.png" alt="ELRUMI" title="ELRUMI">
+					<a href="elrumi/index.html" target="_blank"><img src="images/elrumi.png" alt="ELRUMI" title="ELRUMI"></a>
 				</div>
 				<div class="project" id="project3">
-					<img src="images/flowie.png" alt="FLOWIE" title="FLOWIE">
+					<a href="flowie/index.html" target="_blank"><img src="images/flowie.png" alt="FLOWIE" title="FLOWIE"></a>
 				</div>	
 				<div class="github">
 					<a href="https://github.com/meaganpau/" target="_blank" id="github"><span class="devicons devicons-github_badge" title="Meagan's GitHub"><p>View all projects on GitHub</p></span></a>
@@ -153,7 +168,7 @@
 						<a href="http://www.facebook.com/meaganpau" target="_blank"><i class="fa fa-facebook-f" title="Facebook"></i></a>
 						<a href="http://www.instagram.com/meaganpau" target="_blank"><i class="fa fa-instagram" title="Instagram"></i></a>
 						<a href="http://www.linkedin.com/in/meaganpau" target="_blank"><i class="fa fa-linkedin" title="LinkedIn"></i></a>
-						<a href="mailto:meagan.pau@gmail.com"><i class="fa fa-envelope-o" title="E-Mail"></i></a>
+						<a href="mailto:hello@meaganpau.com"><i class="fa fa-envelope-o" title="E-Mail"></i></a>
 					</div>
 				</div>
 			</section>
