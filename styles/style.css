@@ -150,6 +150,7 @@ a:active {
 	background-position: center;
 	position: relative;
 	margin-top: 80px;
+	max-height: 1500px;
 }
 
 .hello {
