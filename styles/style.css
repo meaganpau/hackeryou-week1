@@ -295,7 +295,13 @@ section {
 
 .contact-icons i {
 	font-size: 70px;
-	width: calc(25% - 4px);
+	width: 18%;
+}
+
+@media (max-width: 600px) {
+	.contact-icons i {
+		font-size: 55px;
+	}
 }
 
 footer {
