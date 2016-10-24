@@ -91,6 +91,16 @@ a:active {
 	float: left;
 }
 
+.logo a {
+	font-weight: 400;
+	font-size: 35px;
+	letter-spacing: 8px;
+}
+
+.logo a:hover {
+	color: #000;
+}
+
 .logo p, #logo-small {
 	text-transform: uppercase;	
 	font-family: 'Oswald', sans-serif;
@@ -245,7 +255,7 @@ hr {
 
 main p {
 	text-align: center;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	font-size: 22px;
 	font-weight: 100;
 	letter-spacing: 1.5px;
@@ -331,22 +341,105 @@ footer {
 
 .projects {
 	background: #eee;
-	position: relative;
+}
+
+.projects p {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: 100;
+	letter-spacing: 1.5px;
+	line-height: 33px;
+}
+
+
+#project1 .project__image, #project1 .project__info, #project3 .project__image, #project3 .project__info {
+	float: left;
+	width: 48%;
+}
+
+#project2 .project__image, #project2 .project__info, #project4 .project__image, #project4 .project__info {
+	float: right;
+	width: 48%;
+}
+
+.project__info {
+	/*height: 200px;*/
+	margin: 5% 0;
+	padding: 5%;
+}
+
+.project__info h3 {
+	font-family: 'Oswald', serif;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 26px;
+	margin-bottom: 2%;
+}
+
+.project__info span {
+	font-style: italic;
+}
+
+#clyde {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 3px;
+	transition: 0.3s all ease;
+}
+
+#clyde:hover {
+	color: #888;
+}
+
+.project__info button {
+	display: inline-block;
+	width: 150px;
+	padding: 10px 0;
+	margin: 3%;
+	background: transparent;
+	border: 1px solid #888;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 18px;
+	transition: 0.3s all ease;
+}
+
+@media (max-width: 1050px) {
+	.projects p {
+		font-size: 20px;
+	}
+
+	.project__info {
+		padding: 0;
+	}
+}
+
+.project__info button:hover {
+	border: 1px solid black;
+}
+
+#project2 {
+	/*text-align: right;*/
 }
 
 #project2 img {
-	float: right;
-	margin-top: -25%;
+	text-align: right;
 }
-
+/*
 #project3 img {
 	margin-top: -20%;
 	margin-left: 10%;
+}*/
+
+.project {
+	text-align: center;
 }
 
 .project img {
-	width: 60%;
-	min-width: 400px;
+	width: 100%;
 	-webkit-filter: saturate(0);
   	filter: saturate(0);
   	transition: 1s;
@@ -357,6 +450,18 @@ footer {
   	filter: saturate(100%);
 }
 
+@media (max-width: 900px) {
+	#project2 .project__image, #project2 .project__info, #project4 .project__image, #project4 .project__info, #project1 .project__image, #project1 .project__info, #project3 .project__image, #project3 .project__info {
+		float: none;
+		margin: 0 auto;
+		width: 80%;
+	}
+	.project {
+		margin-bottom: 20px;
+	}
+}
+
+/*
 .github {
 	float: left;
 	text-align: center;
@@ -367,7 +472,7 @@ footer {
 
 .github p {
 	font-size: 18px;
-}
+}*/
 
 @media (max-width: 900px) {
 	.github p {
@@ -531,7 +636,7 @@ nav #dropDown {
   	border: 1px solid black;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
 	.about-pic {
 		float: none;
 		margin: 0 auto;
